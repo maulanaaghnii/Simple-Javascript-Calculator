@@ -1,0 +1,127 @@
+<!-- Pemrograman Website
+Annisa Luthfi Endah Rizya
+A11.2019.12028 -->
+<HTML>
+<HEAD>
+<TITLE>Text Box Example</TITLE>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<SCRIPT LANGUAGE="JavaScript">
+function plus()
+{ var n1 = document.formhitung.n1.value;
+var n2 = document.formhitung.n2.value;
+var hsl = parseInt(n1)+parseInt(n2);
+document.formhitung.hasil.value=hsl;
+}
+function kali()
+{ var n1 = document.formhitung.n1.value;
+var n2 = document.formhitung.n2.value;
+var hsl = n1*n2;
+document.formhitung.hasil.value=hsl;
+}
+
+function bagi()
+{ var n1 = document.formhitung.n1.value;
+var n2 = document.formhitung.n2.value;
+var hsl = n1/n2;
+document.formhitung.hasil.value=hsl;
+}
+
+function minus()
+{ var n1 = document.formhitung.n1.value;
+var n2 = document.formhitung.n2.value;
+var hsl = n1-n2;
+document.formhitung.hasil.value=hsl;
+}
+
+function pangkat()
+{ var n1 = document.formhitung.n1.value;
+var n2 = document.formhitung.n2.value;
+var hsl = n1**n2;
+document.formhitung.hasil.value=hsl;
+}
+
+
+</SCRIPT>
+</HEAD>
+<BODY>
+<br>
+<br>
+<br>
+<h3 align="center"> Mini Calculator</h3>
+<hr>
+
+
+<!-- start grid 3row x 4col -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3" ></div>
+    <div class="col-sm-6" >
+
+			<!-- START FORM -->
+
+			<FORM ACTION="" METHOD="POST" NAME="formhitung">
+			<div class="container-fluid">
+			<div class="row">
+			<div class="col-sm-12">
+
+			<div class="container">
+			  	<table class="table table-borderless" align="center">
+				<tr>
+					<div class="container">
+						<td>Value 1</td><td> <INPUT TYPE=TEXT NAME="n1" size="10" class="form-control"></td>
+					</div>
+				</tr>
+				<tr>
+					<div class="container">
+						<td>Value 2</td>
+						<td> <INPUT TYPE=TEXT NAME="n2" size="10" class="form-control" ></td>
+					</div>
+				</tr>
+				<tr>
+					<div class="container">
+					<td>Result</td>
+					<td> <INPUT TYPE=TEXT NAME="hasil" size="10" class="form-control" readonly></td>
+					</div>
+				</tr>
+				<tr>
+					<td>
+
+					</td>
+					<td>
+									<div class="container">
+							<button type="button" class="btn btn-primary" VALUE="+" OnClick="plus()">+</button>
+							<button type="button" class="btn btn-primary" VALUE="-" OnClick="minus()">-</button>
+							<button type="button" class="btn btn-primary" VALUE="x" OnClick="kali()">x</button>
+							<button type="button" class="btn btn-primary" VALUE="/" OnClick="bagi()">/</button>
+							<button type="button" class="btn btn-primary" VALUE="Pangkat" OnClick="pangkat()">x <sup>y</sup></button>
+							<button type="reset" class="btn btn-danger" VALUE="Reset">Reset</button>
+						</div>
+					</td>
+				</tr>
+				</table>
+			</div>
+			</div>
+			</div>
+			</div>
+			</FORM>
+			<!--  END FORM-->
+
+
+		</div>
+    <div class="col-sm-3" ></div>
+
+  </div>
+</div>
+
+<hr>
+<p align="center">Annisa Luthfi Endah Rizkya - A11.2019.11658</p>
+
+<!-- end grid 3row x 4col -->
+
+</BODY>
+</HTML>
